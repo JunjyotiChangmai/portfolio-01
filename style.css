@@ -47,7 +47,7 @@
       cursor: pointer;
   }
 
-  .nav-bar ul i {
+  .nav-bar ul img {
       display: none;
   }
 
@@ -78,6 +78,20 @@
     font-size: 2.5vw;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+  }
+
+  .main-left button {
+    height: 7vh;
+    margin-top: 2rem;
+    width: 70%;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    border: 1px solid #0888d8;
+    color: #0888d8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.6vw;
   }
 
   .main-left span {
@@ -126,9 +140,9 @@
         display: none;
     }
 
-    .nav-bar ul i {
+    .nav-bar ul img {
         display: block;
-        font-size: 7vw;
+        width: 13vw;
     }
 
     .nav-bar .logo {
@@ -151,16 +165,30 @@
         flex-direction: column;
         width: 100%;
         height: 45vh;
-        padding: 2rem 2rem 2rem 2rem;
-        gap: 0.8rem;
+        padding: 1rem 2rem 1rem 2rem;
+        gap: 0.7rem;
         font-size: 7.5vw;
         font-weight: 500;
         font-family: 'Roboto', sans-serif;
       }
 
+      .main-left button {
+        height: 6.6vh;
+        width: 70%;
+        margin-top: 0.4rem;
+        border: none;
+        background-color: white;
+        color: #0888d8;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 4.8vw; 
+        border-radius: 8px;
+        border: 1px solid #0888d8;
+      }
+
       .main-right {
         width: 100%;
-        height: 45vh;
+        height: 40vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -169,7 +197,7 @@
       .main-right img {
         width: 100%;
         height: 100%;
-        padding: 0.2rem 2.3rem 2rem 2.3rem;
+        padding: 0.2rem 2.5rem 2rem 2.5rem;
       }
     
   
