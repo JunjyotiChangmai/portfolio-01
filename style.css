@@ -17,7 +17,6 @@
   }
 
   .container {
-      /* position: absolute; */
       width: 74%;
       height: 95vh;
       background-color: white;
@@ -74,7 +73,6 @@
     flex-direction: column;
     width: 50%;
     height: 90vh;
-    /* border: 1px solid crimson; */
     padding: 8rem 3rem 2rem 7rem;
     gap: 0.5rem;
     font-size: 2.5vw;
@@ -83,13 +81,18 @@
   }
 
   .main-left span {
-    color: rgb(0, 140, 255);
+    color: #0888d8;
   }
 
   .main-right {
     width: 50%;
     height: 90vh;
-    /* border: 1px solid rgb(63, 220, 20); */
+  }
+
+  .main-right img {
+    width: 100%;
+    height: 75%;
+    padding: 2rem 7rem 2rem 1rem;
   }
 
 
@@ -105,7 +108,7 @@
           width: 100%;
           height: 100vh;
           background-color: white;
-          border-radius: 13px;
+          border-radius: 0px;
           box-shadow: 20px 20px 50px rgb(150, 148, 148);
           overflow: hidden;
     }
@@ -129,8 +132,8 @@
     }
 
     .nav-bar .logo {
-        font-size: 6.1vw;
-        padding: 1rem 0.75rem;
+        font-size: 5.5vw;
+        padding: 0.9rem 0.75rem;
     }
 
 
@@ -148,7 +151,6 @@
         flex-direction: column;
         width: 100%;
         height: 45vh;
-        /* border: 1px solid crimson; */
         padding: 2rem 2rem 2rem 2rem;
         gap: 0.8rem;
         font-size: 7.5vw;
@@ -159,7 +161,16 @@
       .main-right {
         width: 100%;
         height: 45vh;
-        /* border: 3px solid rgb(20, 184, 72); */
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
+
+      .main-right img {
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem 2.3rem 2rem 2.3rem;
+      }
+    
   
   }
