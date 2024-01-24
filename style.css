@@ -270,7 +270,7 @@
       }
 
       .side-bar .footer-side-bar {
-        height: 8vh;
+        height: 8svh;
         display: flex;
         align-items: center;
         gap: 0.8rem;
