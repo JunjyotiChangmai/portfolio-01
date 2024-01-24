@@ -47,6 +47,11 @@
       cursor: pointer;
   }
 
+  .nav-bar ul li a {
+      text-decoration: none;
+      color: black;
+  }
+
   .nav-bar ul img {
       display: none;
   }
@@ -91,6 +96,10 @@
     font-weight: 600;
     font-size: 1.6vw;
     cursor: pointer;
+  }
+
+  .main-left button:active {
+    background-color: rgb(230, 243, 254);
   }
 
   .main-left span {
@@ -219,7 +228,7 @@
 
       .side-bar .top-side-bar {
         display: flex;
-        height: 12vh;
+        height: 13vh;
         padding: 0rem 1.1rem;
         align-items: center;
         justify-content: space-between;
