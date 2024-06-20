@@ -6,63 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio 1</title>
+    <title>Junjyoti Changmai</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="side-bar" id="side-bar">
-            <div class="top-side-bar">
-                <div class="logo">JC.</div>
-                <div id="cross-icon"><i class="fa-solid fa-xmark"></i></div>
-            </div>
-            <div class="body-side-bar">
-                <ul>
-                    <li><i class="fa-solid fa-house"></i> HOME</li>
-                    <li><i class="fa-solid fa-pen-nib"></i> SKILLS</li>
-                    <li><i class="fa-solid fa-chart-bar"></i> PROJECTS</li>
-                    <li><i class="fa-regular fa-address-card"></i> ABOUT</li>
-                    <li><i class="fa-solid fa-phone"></i> CONTACT</li>
-                </ul>
-            </div>
-            <div class="footer-side-bar">
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-            </div>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">JCh.</div>
+                <div class="nav-list">
+                    <ul class="aColor">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="menu-icon"></div> -->
+            </nav>
         </div>
+        <div class="header-content">
+            <div class="com-pre">Hello,</div>
+            <div class="com-name"> I'm Junjyoti Changmai</div>
+            <div class="com-text-line">Web Developer</div>
+        </div>
+    </header>
 
-        <div class="nav-bar">
-            <div class="logo">JC.</div>
-            <ul>
-                <li> <a href="index.html">HOME</a></li>
-                <li> <a href="pages/skill.html">SKILLS</a></li>
-                <li> <a href="pages/project.html">PROJECTS</a></li>
-                <li> <a href="pages/about.html">ABOUT</a></li>
-                <li> <a href="pages/contact.html">CONTACT</a></li>
-                <img id="menu-Icon" src="images/menu.png">
-            </ul>
-        </div>
-        <div class="main">
-            <div class="main-left">
-                <h3>Hello,</h3>
-                <h2>I'm <span>Junjyoti Changmai</span></h2>
-                <p>Frontend developer</p>
-                <button>Download Resume</button>
+    <section id="about" class="com-about">
+        <div class="ab-container">
+            <div class="ab-text-area">
+                <div class="ab-tx">About Me</div>
+                <div class="ab-text">
+                    <h2>Hello, I'm Junjyoti Changmai</h2>
+                    <p>
+                        Currently in my third year pursuing B.Tech in Computer Science and Engineering. Passionate about
+                        technology, I envision a career at the forefront of innovation, where I continuously learn and
+                        adapt to emerging technologies. My journey is driven by the desire to excel in this dynamic
+                        field, embracing lifelong learning as the cornerstone of my professional growth.</p>
+                </div>
             </div>
-            <div class="main-right">
-                <img src="images/working-with-laptop.png" alt="image">
-            </div>
+            <div class="ab-img"><img src="/images/20240616_180453.png" alt=""></div>
+            <div class="item"></div>
         </div>
+    </section>
 
-        <div class="footer">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
+
+    <section id="project" class="com-project">
+        <div class="pro-title-box">
+            <div class="pro-text-1">Projects</div>
+            <div class="pro-text-2">My Projects</div>
         </div>
-    </div>
+        <div class="projects">
+            <div class="pro-item">
+                <div class="pro-img"><img src="/images/project1.png" alt=""></div>
+                <div class="pro-name">Trackmail</div>
+                <div class="pro-about">Trackmail is a web application that helps to find out the email sent by you has
+                    been read or not.</div>
+                <a href="https://trackmail.vercel.app">
+                    <div class="pro-link">View</div>
+                </a>
+                <div class="object1"></div>
+            </div>
+            <div class="pro-item">
+                <div class="pro-img"><img src="/images/project2.png" alt=""></div>
+                <div class="pro-name">Portfolio</div>
+                <div class="pro-about">It is my personal protfolio website develop by using HTML, CSS and JavaScript.
+                </div>
+                <a href="https://junjyotichangmai.github.io/portfolio-01">
+                    <div class="pro-link">View</div>
+                </a>
+                <div class="object2"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skill" class="com-skill">
+        <div class="sk-text">Skills</div>
+        <div class="sk-tech">My Technical Skills</div>
+        <div class="skills-01">
+            <div class="sk-items">
+                <div class="sk-item-icon">C</div>
+                <div class="sk-item-name">C</div>
+            </div>
+            <div class="sk-items">
+                <div class="sk-item-icon">C++</div>
+                <div class="sk-item-name">C++</div>
+            </div>
+            <div class="sk-items">
+                <div class="sk-item-icon"></div>
+                <div class="sk-item-name">HTML</div>
+            </div>
+            <div class="sk-items">
+                <div class="sk-item-icon"></div>
+                <div class="sk-item-name">CSS</div>
+            </div>
+            <div class="sk-items">
+                <div class="sk-item-icon">JS</div>
+                <div class="sk-item-name">JavaScript</div>
+            </div>
+        </div>
+        <div class="skills-01">
+            <div class="sk-items">
+                <div class="sk-item-icon"></div>
+                <div class="sk-item-name">React.js</div>
+            </div>
+            <div class="sk-items">
+                <div class="sk-item-icon"></div>
+                <div class="sk-item-name">Node.js</div>
+            </div>
+            <div class="sk-items">
+                <div class="sk-item-icon">EX</div>
+                <div class="sk-item-name">Express.js</div>
+            </div>
+            <div class="sk-items">
+                <div class="sk-item-icon"></div>
+                <div class="sk-item-name">MongoDB</div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="com-contact">
+        <div class="con-container">
+            <div class="con-left">
+                <div class="con-left-wrepper">
+                    <div class="con-text">CONTACT ME</div>
+                    <div class="con-line">Let’s talk about
+                        <br>
+                        Love to hear from you!</div>
+                    <div class="con-add-box">
+                        <div class="con-loc-email">
+                            <div class="location-icon">i</div>
+                            <div class="loc-email">
+                                <div class="add-title"><h5>My Location</h5></div>
+                                <div class="add-text"><p>Dibrugarh - 786101, Assam, India</p></div>
+                            </div>
+                        </div>
+                        <div class="con-loc-email">
+                            <div class="location-icon">i</div>
+                            <div class="loc-email">
+                                <div class="add-title"><h5>Email Address</h5></div>
+                                <div class="add-text"><p>junjyotichangmai17@gmail.com</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con-right">
+                <h3 class="con-ri-title">Send me a Message</h3>
+                <form class="form-area">
+                    <div class="form-group">
+                        <label for="name">Full Name*</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+                     </div>
+                     <div class="form-group">
+                        <label for="eaddress">Email*</label>
+                        <input type="email" id="eaddress" name="eaddress" placeholder="example@yourmail.com" required
+                           aria-required="true">
+                     </div>
+                     <div class="form-group">
+                        <label for="phone">Phone*</label>
+                        <input type="tel" id="phone" name="phone" placeholder="XXXXXXXXXX" required
+                           aria-required="true">
+                     </div>
+                     <div class="form-group-ms">
+                        <label for="message">Message*</label>
+                        <textarea name="message" id="message" rows="1" placeholder="Type your message here" required
+                           aria-required="true"></textarea>
+                     </div>
+                     <div class="form-group">
+                        <button type="submit" class="ud-main-btn">
+                           Send Message
+                        </button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div className="footer-container">
+            <p>&copy; 2024 Junjyoti Changmai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- <i class="fab fa-html5"></i> -->
+
     <script src="script.js"></script>
 </body>
 
