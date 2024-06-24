@@ -96,7 +96,7 @@ a {
     display: flex;
     justify-content: center;
 }
-.com-about .ab-container {
+.ab-container {
     width: 1300px;
     height: 631px;
     display: flex;
@@ -105,6 +105,8 @@ a {
     border-radius: 4px;
     overflow: hidden;
     position: relative;
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
     
 }
 .com-about .ab-container .ab-text-area {
@@ -524,4 +526,15 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
 }
