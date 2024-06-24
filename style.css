@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -339,11 +338,16 @@ a {
     font-size: 20px;
     font-weight: 500;
 }
+.sk-item-icon i {
+    font-size: 32px;
+}
+.sk-item-icon img {
+    height: 32px;
+}
 
 .com-contact {
     width: 100%;
     height: 870px;
-    /* background-color: #13c296; */
     padding: 120px 0px;
     position: relative;
     display: flex;
@@ -401,12 +405,16 @@ a {
     width: 330px;
     height: 60px;
     margin-bottom: 30px;
-    /* background-color: #13c296; */
     display: flex;
 }
 .location-icon {
     width: 32px;
     margin-right: 24px;
+    display: flex;
+    justify-content: center;
+}
+.location-icon i {
+    font-size: 33px;
 }
 .loc-email {
     width: 260px;
@@ -501,4 +509,19 @@ textarea {
     justify-content: center;
     color: white;
     position: relative;
+}
+.footer-container {
+    width: 1300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-icon {
+    width: 123px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
