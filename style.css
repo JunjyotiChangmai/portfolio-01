@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 header {
     width: 100%;
     height: 370px;
@@ -12,8 +13,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
+
 .container {
     width: 100%;
     display: flex;
@@ -22,11 +24,12 @@ header {
     width: 100%;
     height: 74px;
     position: fixed;
-    background-color:#3056D3;
+    background-color: #3056D3;
     z-index: 99;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;
 }
+
 .navbar {
     width: 100%;
     display: flex;
@@ -35,6 +38,7 @@ header {
     height: 100%;
     padding: 0rem 6.25rem;
 }
+
 .logo {
     height: 100%;
     display: flex;
@@ -42,6 +46,7 @@ header {
     font-size: 22px;
     font-weight: 500;
 }
+
 .navbar .nav-list ul {
     width: 1200px;
     height: 100%;
@@ -51,7 +56,7 @@ header {
     justify-content: center;
     gap: 61px;
     font-size: 16px;
-    
+
 }
 
 a {
@@ -250,6 +255,7 @@ a {
     overflow: scroll;
     scrollbar-width: none;
 }
+
 .pro-link {
     border-radius: 8px;
     font-size: 20px;
@@ -578,6 +584,10 @@ textarea {
     gap: 20px;
 }
 
+.footer-text {
+    text-align: center;
+}
+
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -593,8 +603,9 @@ textarea {
 
 @media (max-width: 600px) {
     .nav-list {
-        display: none;   
+        display: none;
     }
+
     .menu-icon {
         display: block;
         font-size: 26px;
@@ -603,6 +614,7 @@ textarea {
         top: 0;
         right: -16px;
     }
+
     .navbar {
         display: flex;
         align-items: center;
@@ -611,45 +623,55 @@ textarea {
         height: 100%;
         padding: 0rem 1.25rem;
     }
+
     .header-content {
         padding-top: 130px;
     }
+
     .com-about {
         padding: 3.25rem 1.25rem;
     }
+
     .ab-container {
         flex-direction: column;
     }
+
     .com-about .ab-container .ab-text-area {
         padding: 2.5rem 1.25rem;
         width: 100%;
     }
+
     .ab-text h2 {
         width: 100%;
     }
+
     .ab-text p {
         width: 100%;
         margin-bottom: 0px;
     }
+
     .ab-img img {
         width: 100%;
         padding: 0px 0px 0px 0px;
     }
+
     .item {
         position: absolute;
         padding: 50px 50px;
         background-color: #a5d7f6;
         border-radius: 50%;
-        top:auto;
+        top: auto;
         bottom: -40px;
     }
 
     .com-project {
         padding: 3.25rem 1.25rem;
     }
+
     .projects {
         flex-direction: column;
     }
+
     .pro-item {
         width: 100%;
         padding: 30px 40px;
@@ -658,27 +680,38 @@ textarea {
     .com-skill {
         padding: 3.25rem 1.25rem;
     }
+
     .sk-items {
         width: 112px;
     }
+
     .sk-tech {
         text-align: center;
     }
+
     .com-contact {
         padding: 3.25rem 1.25rem;
     }
+
     .con-left {
         width: 100%;
     }
+
+    .con-line {
+        margin-bottom: 100px;
+    }
+
     .con-right {
         width: 100%;
         margin-left: 0px;
         padding: 1.5rem;
     }
+
     .footer {
         padding: 2rem 1.25rem;
-        
+
     }
+
     .footer-container {
         flex-direction: column;
         gap: 20px;
