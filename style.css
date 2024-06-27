@@ -155,7 +155,7 @@ a {
     background-color: #a5d7f6;
     border-radius: 50%;
     top: -40px;
-    left: 1256px;
+    right: -40px;
 }
 
 
@@ -241,19 +241,20 @@ a {
 
 .pro-about {
     width: 100%;
-    padding: 14px 0px;
     display: flex;
     justify-content: center;
     text-align: center;
     color: #637381;
+    height: 55.2px;
+    overflow: scroll;
+    scrollbar-width: none;
 }
-
 .pro-link {
     border-radius: 8px;
     font-size: 20px;
     width: 100px;
     height: 40px;
-    margin-top: 10px;
+    margin-top: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,8 +273,8 @@ a {
     padding: 50px 50px;
     background-color: #3056D3;
     border-radius: 50%;
-    top: 435px;
-    right: 360px;
+    bottom: -40px;
+    left: -40px;
 }
 
 .object2 {
@@ -592,7 +593,7 @@ textarea {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .nav-list {
         display: none;   
     }
@@ -607,7 +608,7 @@ textarea {
         justify-content: space-between;
         width: 100vw;
         height: 100%;
-        padding: 0rem 2rem;
+        padding: 0rem 1.25rem;
     }
     .header-content {
         padding-top: 130px;
@@ -619,7 +620,7 @@ textarea {
         flex-direction: column;
     }
     .com-about .ab-container .ab-text-area {
-        padding: 0.7rem;
+        padding: 2.5rem 1.25rem;
         width: 100%;
     }
     .ab-text h2 {
@@ -638,18 +639,19 @@ textarea {
         padding: 50px 50px;
         background-color: #a5d7f6;
         border-radius: 50%;
-        top: 900px;
-        left: 275px;
+        top:auto;
+        bottom: -40px;
     }
 
     .com-project {
-        padding: 3.25rem 0rem;
+        padding: 3.25rem 1.25rem;
     }
     .projects {
         flex-direction: column;
     }
     .pro-item {
-        width: 340px;
+        /* width: 340px; */
+        width: 100%;
         padding: 30px 40px;
     }
 
