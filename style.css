@@ -15,6 +15,7 @@ header {
     
 }
 .container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -27,6 +28,7 @@ header {
     box-shadow: rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;
 }
 .navbar {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -229,7 +231,6 @@ a {
 
 .pro-name {
     width: 100%;
-    /* height: 50px; */
     padding: 14px 0px;
     display: flex;
     align-items: center;
@@ -288,7 +289,6 @@ a {
 
 .com-skill {
     width: 100%;
-    height: 675px;
     padding: 120px 111px 90px 111px;
     display: flex;
     flex-direction: column;
@@ -317,8 +317,11 @@ a {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 140px;
+    /* height: 140px; */
     margin-top: 50px;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
 }
 
 .sk-items {
@@ -378,11 +381,9 @@ a {
 
 .com-contact {
     width: 100%;
-    height: 870px;
-    padding: 120px 0px;
+    padding: 7.5rem 6.25rem;
     position: relative;
     display: flex;
-    justify-content: center;
 }
 
 .com-contact::after {
@@ -397,25 +398,21 @@ a {
 }
 
 .con-container {
-    width: 1300px;
+    /* width: 1300px; */
+    width: 100%;
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .con-left {
-    width: 855px;
+    width: 67%;
     display: flex;
     align-items: center;
 }
 
 .con-left-wrepper {
     width: 100%;
-    height: 366px;
-}
-
-.con-right {
-    width: 445px;
-    background-color: white;
 }
 
 .con-text {
@@ -436,9 +433,9 @@ a {
 
 .con-add-box {
     width: 100%;
-    height: 90px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .con-loc-email {
@@ -476,7 +473,8 @@ a {
 }
 
 .con-right {
-    width: 415px;
+    width: 31%;
+    background-color: white;
     height: 100%;
     margin-left: 20px;
     border-radius: 8px;
@@ -553,7 +551,7 @@ textarea {
 }
 
 .footer {
-    height: 95px;
+    /* height: 95px; */
     width: 100%;
     background: #212b36;
     display: flex;
@@ -561,10 +559,11 @@ textarea {
     justify-content: center;
     color: white;
     position: relative;
+    padding: 2rem 6.25rem;
 }
 
 .footer-container {
-    width: 1300px;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -572,7 +571,6 @@ textarea {
 }
 
 .footer-icon {
-    width: 123px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -601,6 +599,9 @@ textarea {
         display: block;
         font-size: 26px;
         padding-right: 20px;
+        position: relative;
+        top: 0;
+        right: -16px;
     }
     .navbar {
         display: flex;
@@ -650,9 +651,37 @@ textarea {
         flex-direction: column;
     }
     .pro-item {
-        /* width: 340px; */
         width: 100%;
         padding: 30px 40px;
+    }
+
+    .com-skill {
+        padding: 3.25rem 1.25rem;
+    }
+    .sk-items {
+        width: 112px;
+    }
+    .sk-tech {
+        text-align: center;
+    }
+    .com-contact {
+        padding: 3.25rem 1.25rem;
+    }
+    .con-left {
+        width: 100%;
+    }
+    .con-right {
+        width: 100%;
+        margin-left: 0px;
+        padding: 1.5rem;
+    }
+    .footer {
+        padding: 2rem 1.25rem;
+        
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
