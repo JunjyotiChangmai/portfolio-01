@@ -1,3 +1,4 @@
+//Changing color of navigation bar while scrolling the page
 window.addEventListener("scroll", function () {
     const nav = document.getElementsByClassName("container");
     const navLi = document.getElementsByTagName("a");

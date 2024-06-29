@@ -137,7 +137,10 @@ header {
     font-weight: 500;
     background-color: #3056D3;
     color: white;
-    width: 103px;
+    width: 106px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ab-text h2 {
@@ -742,7 +745,6 @@ textarea {
     .menu-bar {
         width: 100%;
         display: none;
-        /* height: 200px; */
         background: transparent;
         position: fixed;
         z-index: 1000;
