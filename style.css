@@ -651,7 +651,7 @@ textarea {
     }
 
     .com-about {
-        padding: 3.25rem 1.25rem;
+        padding: 5.25rem 1.25rem;
     }
 
     .ab-container {
@@ -687,7 +687,7 @@ textarea {
     }
 
     .com-project {
-        padding: 3.25rem 1.25rem;
+        padding: 5.25rem 1.25rem;
     }
 
     .projects {
@@ -700,7 +700,7 @@ textarea {
     }
 
     .com-skill {
-        padding: 3.25rem 1.25rem;
+        padding: 5.25rem 1.25rem;
     }
 
     .sk-items {
@@ -713,7 +713,7 @@ textarea {
     }
 
     .com-contact {
-        padding: 4.5rem 1.25rem;
+        padding: 5.25rem 1.25rem;
     }
 
     .con-left {
@@ -772,7 +772,7 @@ textarea {
 
     .menu-container li a {
         text-decoration: none;
-        color: black;
+        color: #323940;
     }
 
 }
