@@ -21,3 +21,28 @@ window.addEventListener("scroll", function () {
         navLi[4].style.color = "white";
     }
 });
+
+
+
+//handeling menubar when click on menu icon
+const menuBar = document.getElementsByClassName("menu-bar");
+const menuIcon = document.getElementsByClassName("menu-icon");
+const crossIcon = document.getElementsByClassName("cross-icon");
+
+let trackClick = 0;
+
+function menuIconHandleClick() {
+    if(trackClick === 0) {   
+        menuBar[0].style.display ="block";
+        menuIcon[0].style.display ="none";
+        crossIcon[0].style.display ="block";
+        trackClick = 1;
+    }
+    else {
+        menuBar[0].style.display ="none";
+        menuIcon[0].style.display ="block";
+        crossIcon[0].style.display ="none";
+        trackClick = 0;
+    }
+}
+document.getElementsByClassName("menu-container")[0].addEventListener("click", menuIconHandleClick);
