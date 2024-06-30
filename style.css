@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 a {
     text-decoration: none;
 }
@@ -72,6 +73,12 @@ header {
     flex-direction: column;
     align-items: center;
     padding-top: 185px;
+    /* animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; */
+    /* visibility: visible; */
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
 }
 
 .header-content .com-name {
@@ -120,14 +127,15 @@ header {
     border-radius: 4px;
     overflow: hidden;
     position: relative;
-    animation-delay: 0.2s;
-    animation-name: fadeInUp;
 }
 
-.com-about .ab-container .ab-text-area {
+.ab-text-area {
     padding: 70px;
     width: 50%;
     height: 100%;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .ab-tx {
@@ -187,6 +195,9 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .pro-text-1 {
@@ -223,6 +234,9 @@ header {
     align-items: center;
     position: relative;
     overflow: hidden;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .pro-img {
@@ -313,6 +327,9 @@ header {
     margin-bottom: 10px;
     font-weight: 600;
     color: #3056D3;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .sk-tech {
@@ -322,6 +339,9 @@ header {
     margin-bottom: 20px;
     color: #212b36;
     text-transform: capitalize;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .skills-01 {
@@ -341,6 +361,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .sk-item-icon {
@@ -420,6 +443,9 @@ header {
     width: 67%;
     display: flex;
     align-items: center;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .con-left-wrepper {
@@ -490,6 +516,9 @@ header {
     border-radius: 8px;
     padding: 60px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 28px;
+    animation: fadeInUp linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .con-ri-title {
@@ -601,14 +630,15 @@ textarea {
 }
 
 @keyframes fadeInUp {
-    0% {
+    from {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
+        /* scale: 0.5; */
     }
-
-    100% {
+    to {
         opacity: 1;
         transform: translateZ(0);
+        /* scale: 1; */
     }
 }
 
