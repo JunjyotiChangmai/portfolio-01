@@ -1,4 +1,4 @@
-//Changing color of navigation bar while scrolling the page
+//Changing color of navigation bar while scrolling the page-------------------x---------------x--------------------x---------------------x----------------
 window.addEventListener("scroll", function () {
     const nav = document.getElementsByClassName("container");
     const navLi = document.getElementsByTagName("a");
@@ -25,7 +25,7 @@ window.addEventListener("scroll", function () {
 
 
 
-//handeling menubar when click on menu icon
+//handeling menubar when click on menu icon-----------x--------x---------x----------------------x-------------------------x------------------
 const menuBar = document.getElementsByClassName("menu-bar");
 const menuIcon = document.getElementsByClassName("menu-icon");
 const crossIcon = document.getElementsByClassName("cross-icon");
@@ -33,17 +33,53 @@ const crossIcon = document.getElementsByClassName("cross-icon");
 let trackClick = 0;
 
 function menuIconHandleClick() {
-    if(trackClick === 0) {   
-        menuBar[0].style.display ="block";
-        menuIcon[0].style.display ="none";
-        crossIcon[0].style.display ="block";
+    if (trackClick === 0) {
+        menuBar[0].style.display = "block";
+        menuIcon[0].style.display = "none";
+        crossIcon[0].style.display = "block";
         trackClick = 1;
     }
     else {
-        menuBar[0].style.display ="none";
-        menuIcon[0].style.display ="block";
-        crossIcon[0].style.display ="none";
+        menuBar[0].style.display = "none";
+        menuIcon[0].style.display = "block";
+        crossIcon[0].style.display = "none";
         trackClick = 0;
     }
 }
 document.getElementsByClassName("menu-container")[0].addEventListener("click", menuIconHandleClick);
+
+
+
+//------------x----------x form data send here x---------------x------------------x--------------------x----------------x-------------------x--------------------x--------------
+
+const form = document.getElementsByClassName("form-area");
+
+form[0].addEventListener("submit", function (e) {
+    e.preventDefault()
+    let name = document.getElementById("name").value
+    let emailID = document.getElementById("eaddress").value
+    let phone = document.getElementById("phone").value
+    let Msg = document.getElementById("message").value
+
+    let userData = {
+        fullName: name,
+        email: emailID,
+        phoneNo: Number(phone),
+        message: Msg
+    }
+
+    const url = "http://localhost:8000/msgData";
+    fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(userData),
+        headers: {
+            'Content-type': 'application/json'
+        }
+    }).then((res) => {
+        if (res.status === 200) {
+            alert("Message Sent Succesfully");
+        }
+    }).catch((e) => {
+        alert(e);
+    })
+})
