@@ -54,7 +54,7 @@ document.getElementsByClassName("menu-container")[0].addEventListener("click", m
 
 const form = document.getElementsByClassName("form-area");
 
-form[0].addEventListener("submit", function (e) {
+form[0].addEventListener("submit", async function (e) {
     e.preventDefault()
     let name = document.getElementById("name").value
     let emailID = document.getElementById("eaddress").value
@@ -68,8 +68,8 @@ form[0].addEventListener("submit", function (e) {
         message: Msg
     }
 
-    const url = "http://localhost:8000/msgData";
-    fetch(url, {
+    const url = "https://api-portfolio-ntqj.onrender.com/msgData";
+    await fetch(url, {
         method: 'POST',
         body: JSON.stringify(userData),
         headers: {
@@ -78,6 +78,7 @@ form[0].addEventListener("submit", function (e) {
     }).then((res) => {
         if (res.status === 200) {
             alert("Message Sent Succesfully");
+            form[0].reset();
         }
     }).catch((e) => {
         alert(e);
