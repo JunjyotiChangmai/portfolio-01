@@ -84,7 +84,7 @@ form[0].addEventListener("submit", async function (e) {
     }).then((res) => {
         if (res.status === 200) {
             alert("Message Sent Succesfully");
-            form[0].reset()
+            form[0].reset();
             msgText[0].innerHTML = "Send Message";
             msgText[0].disabled = false;
         }
