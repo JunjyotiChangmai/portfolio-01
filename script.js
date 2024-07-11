@@ -53,9 +53,14 @@ document.getElementsByClassName("menu-container")[0].addEventListener("click", m
 //------------x----------x form data send here x---------------x------------------x--------------------x----------------x-------------------x--------------------x--------------
 
 const form = document.getElementsByClassName("form-area");
+const msgText = document.getElementsByClassName("ud-main-btn");
 
 form[0].addEventListener("submit", async function (e) {
     e.preventDefault()
+
+    msgText[0].disabled = true;
+    msgText[0].innerHTML = "Sending...";
+
     let name = document.getElementById("name").value
     let emailID = document.getElementById("eaddress").value
     let phone = document.getElementById("phone").value
@@ -68,6 +73,7 @@ form[0].addEventListener("submit", async function (e) {
         message: Msg
     }
 
+    // const url = "http://localhost:8000/msgData";
     const url = "https://api-portfolio-ntqj.onrender.com/msgData";
     await fetch(url, {
         method: 'POST',
@@ -78,9 +84,15 @@ form[0].addEventListener("submit", async function (e) {
     }).then((res) => {
         if (res.status === 200) {
             alert("Message Sent Succesfully");
-            form[0].reset();
+            form[0].reset()
+            msgText[0].innerHTML = "Send Message";
+            msgText[0].disabled = false;
         }
     }).catch((e) => {
         alert(e);
+        msgText[0].innerHTML = "Send Message";
+        msgText[0].disabled = false;
     })
+
+
 })
