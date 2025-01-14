@@ -271,7 +271,7 @@ header {
     justify-content: center;
     text-align: center;
     color: #637381;
-    height: 55.2px;
+    height: 69.2px;
     overflow: scroll;
     scrollbar-width: none;
 }
@@ -281,7 +281,7 @@ header {
     font-size: 20px;
     width: 100px;
     height: 40px;
-    margin-top: 14px;
+    /* margin-top: 14px; */
     display: flex;
     align-items: center;
     justify-content: center;
