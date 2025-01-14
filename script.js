@@ -74,7 +74,7 @@ form[0].addEventListener("submit", async function (e) {
     }
 
     // const url = "http://localhost:8000/msgData";
-    const url = "https://api-portfolio-ntqj.onrender.com/msgData";
+    const url = "https://portfolio-backend-nine-nu.vercel.app/msgData";
     await fetch(url, {
         method: 'POST',
         body: JSON.stringify(userData),
