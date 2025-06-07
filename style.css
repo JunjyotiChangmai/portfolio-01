@@ -218,10 +218,16 @@ header {
 
 .projects {
     margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 55px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* gap: 55px; */
+
+
+    /* width: 100%; */
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .pro-item {
@@ -720,7 +726,8 @@ textarea {
     }
 
     .projects {
-        flex-direction: column;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .pro-item {
