@@ -96,3 +96,6 @@ form[0].addEventListener("submit", async function (e) {
 
 
 })
+
+
+document.getElementsByClassName("curr-year")[0].innerHTML = new Date().getFullYear();

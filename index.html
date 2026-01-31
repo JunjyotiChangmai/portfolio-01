@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Junjyoti Changmai, it is my portfolio website to showcase my skill, projects and some information about myself.">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" data-auto-a11y="true">
     <link rel="stylesheet" href="style.css">
     <title>Junjyoti Changmai</title>
 </head>
@@ -60,14 +60,14 @@
                         Changmai
                     </h2>
                     <p>
-                        Currently in my third year pursuing B.Tech in Computer Science and Engineering. Passionate about
+                        Currently in my final year pursuing B.Tech in Computer Science and Engineering. Passionate about
                         technology, I envision a career at the forefront of innovation, where I continuously learn and
                         adapt to emerging technologies. My journey is driven by the desire to excel in this dynamic
                         field, embracing lifelong learning as the cornerstone of my professional growth.
                     </p>
                 </div>
             </div>
-            <div class="ab-img"><img src="20240616_180453.png" alt="junjyotichangmai"></div>
+            <div class="ab-img"><img src="20240616_180453.png" alt="junjyotichangmai" loading="lazy"></div>
             <div class="item"></div>
         </div>
     </section>
@@ -80,43 +80,48 @@
         </div>
         <div class="projects">
             <div class="pro-item">
-                <div class="pro-img"><img src="project1.png" alt="project-image1"></div>
+                <div class="pro-img"><img src="project1.png" alt="project-image1" loading="lazy"></div>
                 <div class="pro-name">Trackmail</div>
                 <div class="pro-about">Trackmail is a web application that helps to find out the email sent by you has
                     been read or not.</div>
-                <a href="https://trackmail.vercel.app">
+                <a href="https://trackmail.vercel.app" target="_blank" rel="noopener noreferrer">
                     <div class="pro-link">View</div>
                 </a>
-                <!-- <div class="object1"></div> -->
             </div>
             <div class="pro-item">
-                <div class="pro-img"><img src="landing page.png" alt="project-image1"></div>
+                <div class="pro-img"><img src="landing page.png" alt="project-image1" loading="lazy"></div>
                 <div class="pro-name">CodeVerse</div>
                 <div class="pro-about">A unified platform that combines multiple competitive coding profiles into one.
                 </div>
-                <a href="https://codeverse-umber.vercel.app/">
+                <a href="https://codeverse-umber.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <div class="pro-link">View</div>
                 </a>
-                <!-- <div class="object1"></div> -->
             </div>
             <div class="pro-item">
-                <div class="pro-img"><img src="img_npm.jpg" alt="project-image1"></div>
+                <div class="pro-img"><img src="orbitcli.png" alt="project-image1" loading="lazy"></div>
+                <div class="pro-name">Orbit CLI</div>
+                <div class="pro-about">A cli based AI agent that automate the project development workflow.
+                </div>
+                <a href="https://orbitcli-client-wb.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="pro-link">View</div>
+                </a>
+            </div>
+            <div class="pro-item">
+                <div class="pro-img"><img src="img_npm.jpg" alt="project-image1" loading="lazy"></div>
                 <div class="pro-name">Proxor</div>
                 <div class="pro-about">Extract user profile data from popular coding platforms with simple function calls.</div>
-                <a href="https://www.npmjs.com/package/proxor">
+                <a href="https://www.npmjs.com/package/proxor" target="_blank" rel="noopener noreferrer">
                     <div class="pro-link">View</div>
                 </a>
-                <!-- <div class="object1"></div> -->
             </div>
             <div class="pro-item">
-                <div class="pro-img"><img src="project2.png" alt="project-image2"></div>
+                <div class="pro-img"><img src="project2.png" alt="project-image2" loading="lazy"></div>
                 <div class="pro-name">Portfolio</div>
                 <div class="pro-about">It is my personal portfolio website develop by using HTML, CSS and JavaScript.
                 </div>
-                <a href="https://junjyotichangmai.vercel.app/">
+                <a href="https://junjyotichangmai.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <div class="pro-link">View</div>
                 </a>
-                <!-- <div class="object2"></div> -->
             </div>
         </div>
     </section>
@@ -207,7 +212,7 @@
                 <form class="form-area">
                     <div class="form-group">
                         <label for="name">Full Name*</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true">
+                        <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true">
                     </div>
                     <div class="form-group">
                         <label for="eaddress">Email*</label>
@@ -236,18 +241,18 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-icon">
-                <a href="https://github.com/JunjyotiChangmai"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/changmai-junjyoti"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://x.com/junjyotichang"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/JunjyotiChangmai" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/changmai-junjyoti" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/junjyotichang" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="mailto:junjyotichangmai17@gmail.com"><i class="fa-solid fa-envelope"></i></a>
             </div>
             <div class="footer-text">
-                &copy; 2025 Junjyoti Changmai. All rights reserved.
+                &copy; <span class="curr-year"></span> Junjyoti Changmai. All rights reserved.
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
